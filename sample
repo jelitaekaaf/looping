@@ -1,0 +1,25 @@
+else {
+        // Kasus lainnya
+        return "Tidak dapat dievaluasi";
+    }
+
+
+
+    <?php
+function evaluasiKinerja($nomorInduk) {
+    if ($nomorInduk % 2 == 1) {
+        // ganjil
+        return "Memuaskan";
+    } elseif ($nomorInduk % 2 == 0) {
+        // genap
+        return "Cemerlang";
+    } elseif ($nomorInduk % 3 == 0 && $nomorInduk % 2 == 1) {
+        // kelipatan 3 dan ganjil
+        return "Istimewa";
+    } else {
+        return "Tidak ditemukan";
+    }
+}
+else if ($i % 2 == 1) {
+    echo $i . "Cemerlang <br>"; 
+}
